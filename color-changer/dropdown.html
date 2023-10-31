@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta</title>
+    <style>
+        .blue-button {
+            background-color: blue; 
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .red-button {
+            background-color: red; 
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .green-button {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }           
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: grey;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }   
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <script>
+        
+
+        function setColorBlue() {
+            document.body.style.backgroundColor = "blue";
+        }
+
+        function setColorRed() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function setColorGreen() {
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
+</head>
+<body>
+    <div class="dropdown">
+        <span> Change Color </span>
+        <div class="dropdown-content">
+            <div class="color-picker">
+                <button onclick="setColorBlue()" class="blue-button">Blue</button>
+                <button onclick="setColorRed()" class="red-button">Red</button>
+                <button onclick="setColorGreen()" class="green-button">Green</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
